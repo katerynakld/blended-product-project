@@ -3,46 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">
-          <img src="./images/product/logo.png" alt="Logo" />
+      <div class="container header-container">
+        <a href="./index.html" class="logo">
+          <img src="./images/product/logo.png" alt="Logo" class="logo-icon" />
           Product
         </a>
-        <ul>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="./customer.html" class="nav-link">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a href="./resources.html" class="nav-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-buttons">
           <li>
-            <a href="./index.html">Product</a>
+            <button type="button" class="button sign-in-btn">Sign In</button>
           </li>
           <li>
-            <a href="./pricing.html">Pricing</a>
-          </li>
-          <li>
-            <a href="./customer.html">Customers</a>
-          </li>
-          <li>
-            <a href="./resources.html">Resources</a>
+            <button type="button" class="button sign-up-btn">Sign Up</button>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <section id="hero-section" class="hero-section">
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <button type="button">Get started</button>
-        <a href="">Watch the Video</a>
-        <img src="./images/product/hero-img.png" alt="People communicating" />
+        <div class="container">
+          <div class="hero-text">
+            <h1>Work at the speed of thought</h1>
+            <p class="section-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <button type="button" class="button">Get started</button>
+            <a href="" class="video-link">Watch the Video</a>
+          </div>
+          <img
+            src="./images/product/hero-img.png"
+            alt="People communicating"
+            class="hero-image"
+          />
+        </div>
       </section>
 
       <section class="second-section">
@@ -295,11 +323,13 @@
         </ul>
       </section>
 
+      <!-- #region CTA Banner -->
       <section class="cta-banner">
         <h2>Join 100 Compannies who boost their business with Product</h2>
         <button>Get this</button>
         <img src="./images/product/screen.png" alt="Screen" />
       </section>
+      <!-- #endregion -->
     </main>
 
     <footer>
